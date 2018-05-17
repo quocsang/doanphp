@@ -10,7 +10,11 @@ class HomeController extends Controller
 {
     public function indexAction()
     {
+<<<<<<< HEAD
         // echo password_hash("1234", PASSWORD_DEFAULT);
+=======
+        //echo password_hash("1234", PASSWORD_DEFAULT);
+>>>>>>> doanphp/master
        // echo $this->app->getUser()->username;
 
         return $this->render("index");

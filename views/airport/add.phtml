@@ -6,7 +6,11 @@
             <?php if (! empty($error)) {?>
                 <div class="alert alert-danger" role="alert"><?= $error; ?></div>
             <?php } ?>
+<<<<<<< HEAD
             <form class="form-horizontal" method="post" action="/airport/add.html">
+=======
+            <form class="form-horizontal" method="post" action="<?= $_SERVER["PHP_SELF"]; ?>">
+>>>>>>> doanphp/master
                 <div class="form-group">
                     <label for="txtCode" class="col-sm-2 control-label">Code</label>
                     <div class="col-sm-4">
