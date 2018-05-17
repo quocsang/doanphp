@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title><?php echo $this->title; ?></title>
+
+    <!-- Bootstrap -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
+    
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="/css/animate.css">
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="/css/icomoon.css">
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <!-- Superfish -->
+    <link rel="stylesheet" href="/css/superfish.css">
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="/css/magnific-popup.css">
+    <!-- Date Picker -->
+    <link rel="stylesheet" href="/css/bootstrap-datepicker.min.css">
+    <!-- CS Select -->
+    <link rel="stylesheet" href="/css/cs-select.css">
+    <link rel="stylesheet" href="/css/cs-skin-border.css">
+    
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- Modernizr JS -->
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <link href="/css/loading.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <?php echo $css ;?>
+
+  </head>
+  <body>
+    <div id="fh5co-wrapper">
+    <div id="fh5co-page">
+      <header id="fh5co-header-section" class="sticky-banner">
+        <div class="container">
+          <div class="nav-header">
+            <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle dark"><i></i></a>
+            <h1 id="fh5co-logo"><a href="index.html"><i class="icon-airplane"></i></a></h1>
+            <!-- START #fh5co-menu-wrap -->
+            <nav id="fh5co-menu-wrap" role="navigation">
+              <ul class="sf-menu" id="fh5co-primary-menu">
+              <li class="active"><a href="index.html">Trang chủ</a></li>
+              <li>
+                <a href="vacation.html" class="fh5co-sub-ddown">Vé Nội địa</a>
+                <ul class="fh5co-sub-menu">
+                  <li><a href="#">Vé đi Hà nội</a></li>
+                  <li><a href="#">Vé đi TP Hồ Chí Minh</a></li>
+                  <li><a href="#">Vé đi Cần thơ</a></li>
+                  <li><a href="#">Vé đi Nha trang</a></li>
+                  <li><a href="#">Vé đi Huế</a></li>
+                  <li><a href="#">Vé đi Đà lạt</a></li>
+                  <li><a href="#">Vé đi Phú quốc</a></li>
+                  <li><a href="#">Vé đi Vinh</a></li>
+                  <li><a href="#">Vé đi Hải phòng</a></li>
+                  <li><a href="#">Vé đi Buôn mê thuộc</a></li>
+                  <li><a href="#">Vé đi Quy nhơn</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="vacation.html" class="fh5co-sub-ddown">Vé Quốc tế</a>
+                <ul class="fh5co-sub-menu">
+                  <li><a href="#">Vé đi Úc</a></li>
+                  <li><a href="#">Vé đi Mĩ</a></li>
+                  <li><a href="#">Vé đi Pháp</a></li>
+                  <li><a href="#">Vé đi Thái Lan</a></li>
+                  <li><a href="#">Vé đi Ấn Độ</a></li>
+                  <li><a href="#">Vé đi Maylaisia</a></li>
+                  <li><a href="#">Vé đi Nhật bản</a></li>
+                  <li><a href="#">Vé đi Hàn quốc</a></li>
+                  <li><a href="#">Vé đi Trung quốc</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="vacation.html" class="fh5co-sub-ddown">Vé theo hãng</a>
+                <ul class="fh5co-sub-menu">
+                  <li><a href="#">Vietnam Airlines</a></li>
+                  <li><a href="#">Jetstar</a></li>
+                  <li><a href="#">Vietjet Air</a></li>
+                </ul>
+              </li>
+              <li><a href="hotel.html">Vé trong tháng</a></li>
+              <li><a href="hotel.html">Tin khuyến mãi</a></li>
+              <li><a href="hotel.html">Liên hệ</a></li>
+              <li>
+                <a href="vacation.html" class="fh5co-sub-ddown">Tiện ích</a>
+                <ul class="fh5co-sub-menu">
+                  <li><a href="#">Pay Online</a></li>
+                  <li><a href="#">Tra cứu hóa đơn</a></li>
+                  <li><a href="#">Câu hỏi thường gặp</a></li>
+                  <li><a href="#">Thông tin chuyên khoản</a></li>
+                </ul>
+              </li>
+            </ul>
+
+            </nav>
+          </div>
+        </div>
+      </header>
+      <!-- end:header-top -->
+      
+      <div class="fh5co-hero">
+         <?php echo $content; ?> <!-- Noi dung cua cai file View -->
+      </div>
+    </div>
+  </div>
+
+
+    <div class="panel panel-primary" id="loading"  style="display: none;">
+        <div class="panel-heading">
+            <h4 class="panel-title">Loading...</h4>
+        </div>
+        <div class="panel-body">
+            <span id="loadingMsg">Đang tải dữ liệu vui lòng chờ giây lát.</span>
+            <div id="imgLoading" ><img  src="/css/loading_red.gif"/></div>
+        </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
+    <!-- JS of template -->
+    <script src="js/jquery.min.js"></script>
+    <!-- jQuery Easing -->
+    <script src="js/jquery.easing.1.3.js"></script>
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Waypoints -->
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/sticky.js"></script>
+    <!-- Stellar -->
+    <script src="js/jquery.stellar.min.js"></script>
+    <!-- Superfish -->
+    <script src="js/hoverIntent.js"></script>
+    <script src="js/superfish.js"></script>
+    <!-- Magnific Popup -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/magnific-popup-options.js"></script>
+    <!-- Date Picker -->
+    <script src="js/bootstrap-datepicker.min.js"></script>
+    <!-- CS Select -->
+    <script src="js/classie.js"></script>
+    <script src="js/selectFx.js"></script>
+    
+    <!-- Main JS -->
+    <script src="js/main.js"></script>
+    <!--  End js template -->
+
+    <script src="/js/jquery-3.3.1.min.js"></script>
+
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/js/bootstrap.min.js"></script>
+    <?php echo $js ;?>
+  </body>
+</html>
