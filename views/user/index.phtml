@@ -1,0 +1,90 @@
+
+<div class="row jumbotron">
+                            <div class="card">
+                                <div class="card-header" data-background-color="purple">
+                                    <h4 class="title">Edit Profile person</h4>
+                                    <p class="category">Complete your profile </p>
+                                </div>
+                                <div class="card-content">
+                                    <form action="/user/editPerson" method="POST">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="form-group label-floating">
+                                                    <label class="control-label">Fist Name</label>
+                                                    <input type="text" class="form-control" value="<?= $person->firstname; ?>" name="firstname">
+                                                </div>
+                                            </div>
+                                             <div class="col-md-4">
+                                                <div class="form-group label-floating">
+                                                    <label class="control-label">Middle Name</label>
+                                                    <input type="text" class="form-control" value="<?= $person->middlename; ?>" name="middlename">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group label-floating">
+                                                    <label class="control-label">Last Name</label>
+                                                    <input type="text" class="form-control" value="<?= $person->lastname; ?>" name="lastname">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group label-floating">
+                                                    <label class="control-label">Gender</label>
+                                                    <select class="custom-select form-control" name="gender">
+                                                      <option value="1" <?php echo $person->gender==1?"selected":""; ?>>Male</option>
+                                                      <option value="0" <?php echo $person->gender==0?"selected":""; ?>>Female</option>
+                                                    </select>
+                                                </div>
+                                            </div> 
+                                            <div class='col-sm-6'>
+                                                <div class="form-group label-floating">
+                                                    <label class="control-label">Birthdate</label>
+                                                    <input type='date' class="form-control" value="<?= $person->birthdate; ?>" name="birthdate">
+                                                </div>
+                                            </div>
+                                               
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-md-5">
+                                                <div class="form-group label-floating">
+                                                    <label class="control-label">Email address</label>
+                                                    <input type="text" class="form-control" value="<?= $person->email; ?>" name="email">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="form-group label-floating">
+                                                    <label class="control-label">Phone</label>
+                                                    <input type="text" class="form-control" value="<?= $person->phone_number; ?>" name="phone_number">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group label-floating">
+                                                    <label class="control-label">SSN</label>
+                                                    <input type="text" class="form-control" value="<?= $person->ssn; ?>" name="ssn">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <input type="hidden" name="id" value="<?= $person->id; ?>">
+                                        <button type="submit" class="btn btn-primary pull-right">Update Profile</button>
+                                        <div class="clearfix"></div>
+                                    </form>
+                            </div>
+            </div>
+</div>
+<div class="row jumbotron">
+                            <div class="card">
+                                <div class="card-header" data-background-color="purple">
+                                    <h4 class="title">Password</h4>
+                                </div>
+                                <div>
+                                    <a href="/user/changePass">Thay doi mat khau</a>
+                                </div>
+                            </div>
+</div>
+
+
+
+                                       
