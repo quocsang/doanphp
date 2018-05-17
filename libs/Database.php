@@ -28,14 +28,25 @@ class Database{
 			}
 
 			mysqli_set_charset($this->dbconn, "utf8");
+<<<<<<< HEAD
+=======
+			
+>>>>>>> origin/master
 		}
 	}
 
 	public function query($sql){
+<<<<<<< HEAD
 
 		$resutl= mysqli_query($this->dbconn, $sql);
 
 		if (mysqli_error($this->dbconn)){
+=======
+		
+		$resutl= mysqli_query($this->dbconn, $sql);
+		if (mysqli_error($this->dbconn)){
+			echo "SQL: " . $sql;
+>>>>>>> origin/master
 			echo "Lỗi: " . mysqli_error($this->dbconn);
 			return null;
 		}else{
@@ -46,7 +57,10 @@ class Database{
 
 	public function exec($sql){
 		$result = $this->query($sql);
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/master
 		if (mysqli_error($this->dbconn)){
 		//	echo "Lỗi: " . mysqli_error($this->dbconn);
 			return false;
