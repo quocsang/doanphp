@@ -1,0 +1,70 @@
+<br/>
+<div class="container">
+<div class="row">
+    <div class="panel panel-primary">
+        <div class="panel-heading">Create new Customer</div>
+        <div class="panel-body">
+            <?php if (! empty($error)) {?>
+                <div class="alert alert-danger" role="alert"><?= $error; ?></div>
+            <?php } ?>
+            <form class="form-horizontal" method="post" action="/customer/add.html">
+                <div class="form-group">
+                    <label for="txtCode" class="col-sm-2 control-label">Id</label>
+                    <div class="col-sm-4">
+                        <input type="text" class="form-control" id="txtId" name="id" disabled="disabled" placeholder="Auto Increment">
+                    </div>
+
+                </div>
+                <div class="form-group">
+
+                    <label for="txtUser_id" class="col-sm-2 control-label ">User ID</label>
+                    <div class="col-sm-4">
+                        <select name="user_id" class="form-control">
+                            <option>--chọn--</option>
+                            <?php foreach($listUser as $c){ ?>
+                                <option  value="<?= $c->id; ?>" ><?= $c->id; ?></option>
+                            <?php }?>
+                        </select>
+                    </div>
+                    <label for="txtPerson_id" class="col-sm-2 control-label">Person ID</label>
+                    <div class="col-sm-4">
+                        <select name="person_id" class="form-control">
+                            <option>--chọn--</option>
+                            <?php foreach($listPerson as $c){ ?>
+                                <option value="<?= $c->id; ?>" ><?= $c->id; ?></option>
+                            <?php }?>
+                        </select>
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+                    <label for="txtDeleted" class="col-sm-2 control-label">Deleted</label>
+                    <div class="col-sm-4">
+                        <input type="text" class="form-control" name="deleted" placeholder="Delete">
+                    </div>
+                    <label for="txtState" class="col-sm-2 control-label">Company ID</label>
+                    <div class="col-sm-4">
+                        <select name="company_id" class="form-control">
+                            <option>--chọn--</option>
+                            <?php foreach($listCompany as $c){ ?>
+                                <option  value="<?= $c->id; ?>" ><?= $c->id; ?></option>
+                            <?php }?>
+                        </select>
+                    </div>
+                </div>
+
+                
+
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button type="submit" class="btn btn-default">Thêm</button>
+                    </div>
+                </div>
+            </form>
+
+
+        </div>
+    </div>
+</div>
+</div>
